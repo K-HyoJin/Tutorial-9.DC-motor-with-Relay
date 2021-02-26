@@ -23,7 +23,11 @@ pyfirmata의 아두이노 모듈을 사용하기 위해 import함
 ``` digital_input = board.get_pin('d:3:i')``` \
   -> 3번핀을 digital신호 입력핀으로 설정\
 ```led = board.get_pin('d:13:o') ```\
-  -> 13번 핀을 digital신호 출력핀으로 설정
+  -> 13번 핀을 digital신호 출력핀으로 설정\
+변수1 = 변수2.get_pin('**d or a** : **pin number** : **i or o** ') \
+**d or a** : The type of the pin \
+**pin number** : The number of the pin\
+**i or o** : The mode of the pin
   
 ``` it = util.Iterator(board) ```\
 보드의 입력값을 지속적으로 업데이트해주는 iterator 변수 선언
