@@ -21,11 +21,11 @@ pyfirmata의 아두이노 모듈을 사용하기 위해 import함
 변수1 = Arduino('**포트번호**') 를 해서 보드와 연결 
 
 ``` digital_input = board.get_pin('d:3:i')``` \
-  -> 3번핀을 digital신호 입력핀으로 설정\
-  ```led = board.get_pin('d:13:o') ```\
-  -> 13번 핀을 digital신호 출력핀으로 설정\
+  -> 3번핀을 digital신호 입력핀으로 설정
+```led = board.get_pin('d:13:o') ```\
+  -> 13번 핀을 digital신호 출력핀으로 설정
   
-    ``` it = util.Iterator(board) ```\
+``` it = util.Iterator(board) ```\
 보드의 입력값을 지속적으로 업데이트해주는 iterator 변수 선언
 
  ``` it.start()``` \
